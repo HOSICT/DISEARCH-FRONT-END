@@ -8,8 +8,8 @@ const Layout = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    pathname === "/" && navigate("/boards/1");
-  }, []);
+    pathname === "/" && navigate("/boards/1", { replace: true });
+  }, [pathname]);
 
   return (
     <main>
